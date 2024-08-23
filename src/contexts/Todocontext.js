@@ -8,9 +8,12 @@ export const TodoContext = createContext({
   deleteTodo: (id) => {},
   toggleComplete: (id) => {},
 });
+/* to define the information to be passed on as context */
 
 export const useTodo = () => {
   return useContext(TodoContext);
 };
+/* useContext to access and use the TodoContext anywhere */
 
 export const TodoProvider = TodoContext.Provider;
+/* context provider to provide access to context */
